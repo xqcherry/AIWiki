@@ -10,7 +10,7 @@ Accept: application/json
 
 ###
 
-# 1) 创建文档
+# 创建文档
 POST http://127.0.0.1:8000/docus/
 Content-Type: application/json
 Accept: application/json
@@ -22,19 +22,19 @@ Accept: application/json
 
 ###
 
-# 2) 获取文档列表
+# 获取文档列表
 GET http://127.0.0.1:8000/docus/?skip=0&limit=10
 Accept: application/json
 
 ###
 
-# 3) 获取单个文档（把 1 改成你实际创建返回的 id）
+# 获取单个文档（把 1 改成你实际创建返回的 id）
 GET http://127.0.0.1:8000/docus/1
 Accept: application/json
 
 ###
 
-# 4) 更新文档（把 1 改成你实际创建返回的 id）
+# 更新文档（把 1 改成你实际创建返回的 id）
 PUT http://127.0.0.1:8000/docus/1
 Content-Type: application/json
 Accept: application/json
@@ -46,6 +46,6 @@ Accept: application/json
 
 ###
 
-# 5) 删除文档（把 1 改成你实际创建返回的 id）
+# 删除文档（把 1 改成你实际创建返回的 id）
 DELETE http://127.0.0.1:8000/docus/1
 Accept: application/json
